@@ -1,5 +1,5 @@
-##Angular
-###AngularJS简介
+## Angular
+### AngularJS简介
 AngularJS是一个JavaScript框架，它通过指令扩展了HTML，通过表达式绑定数据到HTML，由此使得开发现代的单一页面应用程序变得更加容易
 - 可以把应用程序数据绑定到HTML元素。
 - 可以克隆和重复HTML元素。
@@ -7,17 +7,18 @@ AngularJS是一个JavaScript框架，它通过指令扩展了HTML，通过表达
 - 可以在HTML元素"背后"添加代码。
 - 支持输入验证。
 
-###MVC与MVVM
-####MVC(Model-View-Controller)
+### MVC与MVVM
+#### MVC(Model-View-Controller)
 > MVC是将Model, View和Controller分离，让彼此的职责明确的分开，这样不论是改M, V还是C，都可以确保另外两层可不用做任何修改，同时这样的分层也可以加强程式的可测试性，View和Model基本上是相关的，但它们并不会有直接的相依关系，而是由Controller去决定Model产生的资料，然后丢给View去做呈现，也就是说，Controller是Model和View之间的协调者，View和Model不能直接沟通，以确保责任的分离。
 
 单向数据绑定，用户改变视图(表单元素)，更改后会触发控制器，获取数据后，在刷新视图：
 
 ![enter image description here](http://upload-images.jianshu.io/upload_images/4886613-eb564b66a8a4646e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 单向绑定的优点是相应的可以带来单向数据流，这样做的好处是所有状态变化都可以被记录、跟踪，状态变化通过手动调用通知，源头易追溯。同时组件数据只有唯一的入口和出口，使得程序更直观更容易理解，有利于应用的可维护性。缺点则是代码量会相应的上升，数据的流转过程变长。
 
 
-####MVVM(Model-View-ViewModel)
+#### MVVM(Model-View-ViewModel)
 > MVVM的架构一样是M, V分离，但中间是以VM (ViewModel)来串接，ViewModel负责直接对Model做沟通，而View可以透过一些机制来和ViewModel沟通以取得资料或将资料抛给Model做存取等工作。
 
 双向数据绑定，页面变化（表单元素），会触发数据的变化,数据的变化，会更改页面的变化：
@@ -25,7 +26,7 @@ AngularJS是一个JavaScript框架，它通过指令扩展了HTML，通过表达
 ![enter image description here](http://upload-images.jianshu.io/upload_images/4886613-0eaf328feaa044f8.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 双向绑定优点是在表单交互较多的场景下，会简化大量业务无关的代码。缺点就是我们无法追踪局部状态的变化(虽然大部分情况下我们并不关心)，潜在的行为太多也增加了出错时 debug 的难度。同时由于组件数据变化来源入口变得可能不止一个，新手玩家很容易将数据流转方向弄得紊乱，如果再缺乏一些“管制”手段，最后就很容易因为一处错误操作造成应用雪崩。
 
-###Angular安装与nrm切换源
+### Angular安装
 - 全局安装：
 ```
 npm install babel -g 
@@ -44,42 +45,14 @@ npm init -y
 > npm是基于node，安装node后会直接安装npm,安装模块到node_modules文件夹下，如果当前没有会像上一级找
 > 默认安装angular1.0,市面1.5.8
 
-nrm切换到国内源下载
-- 全局安装nrm：
-```
-npm install nrm -g
-```
-- nrm切换源：
-```
-nrm use <源名称>
-```
-- 查看所有源：
-```
-nrm ls
-```
-- 测试源的速度：
-```
-nrm test
-```
-- 添加珠峰源：
-```
-nrm add zhufeng http://172.18.1.139
-```
-- 删除源：
-```
-nrm del zhufeng
-```
-- 查看全局安装目录 ：
-```
-npm root -g
-```
 
 
-###AngularJS 指令
+### AngularJS 基本指令
 AngularJS 指令是扩展的 HTML 属性，带有前缀 ng-
 
 - ng-app 指令初始化一个 AngularJS 应用程序，定义了 AngularJS 应用程序的根元素。
 - ng-bind 绑定 HTML 元素到应用程序数据,和{{ }}作用一致,可以解决闪烁单行问题。
+- ng-bind-html 这里只能放字符串类型的,将数据html编译成$sce.trustAsHtml(html)
 - ng-model 指令把元素值（比如输入域的值）绑定到应用程序，实现双向数据绑定,放在表单元素上。
   - ng-model 指令也可以：
   - 为应用程序数据提供类型验证（number、email、required）。
@@ -145,8 +118,8 @@ Angular简单购物车功能示例代码：
 </html>
 ```
 
-###Angular过滤器
-####内置过滤器：
+### Angular过滤器
+#### 内置过滤器：
 大小写:
 ```
 {{"asdasd" | uppercase}} 
@@ -177,7 +150,7 @@ number过滤器:
 ```
 {{1489568089171 | date:"yyyy年MM月 hh:mm:ss"}}
 ```
-####自定义过滤器：
+#### 自定义过滤器：
 ```
 <body>
 {{"hello" | capitalized}}
@@ -199,15 +172,7 @@ number过滤器:
 ```
 
 
-
-
-
-
-
-
-
-
-###es5,es6方法
+### es5,es6方法
 filter数组的方法
 "删除"过滤,返回是一个新的数组
 push,pop,unshift,shift,slice,splice,concat,forEach,join,map,sort,indexof,reverse,lastIndexOf,every,some
