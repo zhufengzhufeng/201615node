@@ -25,86 +25,86 @@
 ```
 //组件式
 app.directive('myDrag',function () {
-        return {
-            replace:true, //将原指令标签替换掉，要求模板只能有一个根节点
-            restrict:'EA', //限制使用范围 默认范围是EA,范围的标识必须大写
-            template:`<div>
-                        <div>Hello</div>
-                        <div>world</div>
-                      </div>` //模板的根节点只能有一个
-        }
-    });
+    return {
+        replace:true, //将原指令标签替换掉，要求模板只能有一个根节点
+        restrict:'EA', //限制使用范围 默认范围是EA,范围的标识必须大写
+        template:`<div>
+                    <div>Hello</div>
+                    <div>world</div>
+                  </div>` //模板的根节点只能有一个
+    }
+});
 ```
 ```
 //装饰式 (指令默认没有作用域)
 app.directive('myBorder',function () {
-        return {
-            replace:true,
-            restrict:'EA',
-            //链接函数 链接视图和作用域的
-            link:function ($scope,element,attrs) {//形参 ,在link函数中可以操作DOM元素
-                // 1.代表的是当前指令所在的作用域
-                // 2.element代表当前指令所在的标签，是一个jquery对象
-                //angular.element == $
-                angular.element(document)//$(document)
-                // 3.代表当前指令上所有的属性集合
-            }
+    return {
+        replace:true,
+        restrict:'EA',
+        //链接函数 链接视图和作用域的
+        link:function ($scope,element,attrs) {//形参 ,在link函数中可以操作DOM元素
+            // 1.代表的是当前指令所在的作用域
+            // 2.element代表当前指令所在的标签，是一个jquery对象
+            //angular.element == $
+            angular.element(document)//$(document)
+            // 3.代表当前指令上所有的属性集合
         }
-    });
+    }
+});
 ```
 ```
 //添加属性drag 当前元素则可以拖拽
 app.directive('drag', function ($document) {
-        return {
-            restrict: 'A',
-            link: function (scope, element, attrs)  {
-                element.on('mousedown', function (e) {
-                    var disX = e.pageX - this.offsetLeft;
-                    var disY = e.pageY - this.offsetTop;
-                    angular.element(document).on('mousemove', function (e) {
-                        element.css({
-                            top: e.pageY - disY + 'px',
-                            left: e.pageX - disX + 'px'
-                        });
+    return {
+        restrict: 'A',
+        link: function (scope, element, attrs)  {
+            element.on('mousedown', function (e) {
+                var disX = e.pageX - this.offsetLeft;
+                var disY = e.pageY - this.offsetTop;
+                angular.element(document).on('mousemove', function (e) {
+                    element.css({
+                        top: e.pageY - disY + 'px',
+                        left: e.pageX - disX + 'px'
                     });
-                    angular.element(document).on('mouseup', function (e) {
-                        angular.element(document).off('mousemove');
-                        angular.element(document).off('mousedown');
-                    });
-                    e.preventDefault();
                 });
-            }
+                angular.element(document).on('mouseup', function (e) {
+                    angular.element(document).off('mousemove');
+                    angular.element(document).off('mousedown');
+                });
+                e.preventDefault();
+            });
         }
-    });
+    }
+});
 ```
 
 #### 组件
 组件化开发的好处，复用，管理方便统一管理
 ```
 app.directive('panel',function () {
-        return {
-            restrict:'E',
-            templateUrl:`tmpl/panel.html`,//ajax获取过来的
-            link:function (scope,element,attrs) {
-                //自己家没有 根作用域，如果自己家有 就是自己家的作用域
-                scope.name = attrs.st;
-                scope.title = attrs.title;//取不到属性对应的值的变量
-            },
-            //scope:{}, //给当前指令产生一个作用域 {}  默认值是false
-            // {} 不能获取父作用域的属性 相当于开辟了一个和$rootScope平级的作用域
-            scope: {
-            //通过属性传递的值 可以在scope:{} 里快速获取到
-			//@符引用的是字符串
-			//= 取的是变量
-			//& 取的是方法
-			//名字和key相同，值可以去掉符号后面的。
-			name: '@st',
-			title: '=article',
-			say: '&s'
-            },
-            transclude:true,//会产生一个作用域,会将指令中夹着的部分 插入到带有ng-transclude的标签内
-        };
-    });
+    return {
+        restrict:'E',
+        templateUrl:`tmpl/panel.html`,//ajax获取过来的
+        link:function (scope,element,attrs) {
+            //自己家没有 根作用域，如果自己家有 就是自己家的作用域
+            scope.name = attrs.st;
+            scope.title = attrs.title;//取不到属性对应的值的变量
+        },
+        //scope:{}, //给当前指令产生一个作用域 {}  默认值是false
+        // {} 不能获取父作用域的属性 相当于开辟了一个和$rootScope平级的作用域
+        scope: {
+        //通过属性传递的值 可以在scope:{} 里快速获取到
+        //@符引用的是字符串
+        //= 取的是变量
+        //& 取的是方法
+        //名字和key相同，值可以去掉符号后面的。
+        name: '@st',
+        title: '=article',
+        say: '&s'
+        },
+        transclude:true,//会产生一个作用域,会将指令中夹着的部分 插入到带有ng-transclude的标签内
+    };
+});
 ```
 
 > 补充:
@@ -118,21 +118,21 @@ ng-class (动态的添加类样式) 和class不冲突(静态)
 #### 指令和指令交互
 ```
 app.directive('girl',function () {
-        return {
-            restrict:'E',
-            controller:function ($scope) { //当前指令所在的作用域,不会产生作用域
-            }
+    return {
+        restrict:'E',
+        controller:function ($scope) { //当前指令所在的作用域,不会产生作用域
         }
-    });
-    app.directive('train',function () {
-        return {
-            restrict:'A',
-            //^自己身上找找不到向上找
-            require:'^?girl',//在当前指令上找girl，找到则会在link函数的第四个参数增加girl控制器的实例
-            link:function (scope,element,attrs,gCtrl) { //如果没有依赖到使用的是? 则得到的值是null，否则报错
-            }
+    }
+});
+app.directive('train',function () {
+    return {
+        restrict:'A',
+        //^自己身上找找不到向上找
+        require:'^?girl',//在当前指令上找girl，找到则会在link函数的第四个参数增加girl控制器的实例
+        link:function (scope,element,attrs,gCtrl) { //如果没有依赖到使用的是? 则得到的值是null，否则报错
         }
-    });
+    }
+});
 ```
 
 #### $watch
