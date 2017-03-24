@@ -1,0 +1,963 @@
+    1  pip install powerline-status
+    2  l
+    3  ls
+    4  l
+    5  ls
+    6  pwd
+    7  ls
+    8  pwd
+    9  l
+   10  git
+   11  l
+   12  git
+   13  node
+   14  l
+   15  ls
+   16  ruby
+   17  ls
+   18  ruby -v
+   19  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+   20  ls
+   21  l
+   22  ls
+   23  clear
+   24  git
+   25  git --help
+   26  ls
+   27  homebrew -v
+   28  ls
+   29  brew -v
+   30  l
+   31  brew install node
+   32  cd /usr/local
+   33  l
+   34  cd Homebrew
+   35  l
+   36  cd Library
+   37  l
+   38  cd Homebrew
+   39  L
+   40  LS
+   41  L
+   42  cd ..
+   43  ls
+   44  l
+   45  cd .
+   46  cd ..
+   47  ls
+   48  ljs
+   49  l
+   50  cd ..
+   51  l
+   52  ls
+   53  cd Cellar/
+   54  l
+   55  node
+   56  ls
+   57  clear
+   58  node -v
+   59  npm -v
+   60  l
+   61  clear
+   62  nrm -v
+   63  npm install -g nrm
+   64  nrm ls
+   65  nrm use taobao
+   66  nrm ls
+   67  nrm test
+   68  java -v
+   69  ls
+   70  nrm ls
+   71  clear
+   72  nrm ls
+   73  claer
+   74  /Users/guocongli/Downloads/AX88179_178A_Macintosh_10.6_to_10.12_Driver_Installer_v2.8.0_20160912/AX88179_178A.dmg 
+   75  sudo installer -pkg /Users/guocongli/Downloads/AX88772C_772B_772A_760_772_Macintosh_10.5_to_10.12_Driver_Installer_v2.4.1_20160912\ 2/AX88772.dmg 
+   76  sudo installer /Users/guocongli/Downloads/AX88772C_772B_772A_760_772_Macintosh_10.5_to_10.12_Driver_Installer_v2.4.1_20160912\ 2/AX88772.dmg 
+   77  sudo installer /Users/guocongli/Downloads/AX88772C_772B_772A_760_772_Macintosh_10.5_to_10.12_Driver_Installer_v2.4.1_20160912\ 2/AX88772.dmg /Users/guocongli/Downloads
+   78  sudo installer -pkg /Users/guocongli/Downloads/AX88772C_772B_772A_760_772_Macintosh_10.5_to_10.12_Driver_Installer_v2.4.1_20160912\ 2/AX88772.dmg /Users/guocongli/Downloads
+   79  l
+   80  history
+   81  clear
+   82  sudo installer -pkg /Users/guocongli/Downloads/AX88772C_772B_772A_760_772_Macintosh_10.5_to_10.12_Driver_Installer_v2.4.1_20160912/AX88772.dmg -target "/Applications/"
+   83  sudo installer -pkg /Users/guocongli/Downloads/AX88772C_772B_772A_760_772_Macintosh_10.5_to_10.12_Driver_Installer_v2.4.1_20160912/AX88772.dmg -target /Applications/
+   84  cd /Volumes/Macintosh\ HD
+   85  L
+   86  l
+   87  cd ..
+   88  ~
+   89  l
+   90  hdiutil attach Downloads/AX88772C_772B_772A_760_772_Macintosh_10.5_to_10.12_Driver_Installer_v2.4.1_20160912/AX88772.dmg 
+   91  cd /Volumes/AX88772
+   92  l
+   93  sudo installer -pkg AX88772_v2.4.1.pkg -target "/Applications/"
+   94  sudo installer -pkg AX88772_v2.4.1.pkg -target /Applications/
+   95  ls
+   96  D
+   97  ls
+   98  Documents
+   99  ls
+  100  /ls
+  101  ls
+  102  ../../
+  103  ls
+  104  /guocongli
+  105  cd guocongli
+  106  ls
+  107  Documents
+  108  ls
+  109  ../../
+  110  ls
+  111  guocongli
+  112  ls
+  113  web_project
+  114  ls
+  115  work-space
+  116  git clone git-server:java/business/yinyuetai_web_mobile.git
+  117  ls
+  118  cd Documents
+  119  ls
+  120  git clone git-server:java/business/yinyuetai_web_mobile.git
+  121  cd
+  122  cd .ssh
+  123  ls
+  124  cd
+  125  ls
+  126  cd .ssh
+  127  ls
+  128  ssh-keygen
+  129  ls
+  130  scp id_rsa.pub webrun@192.168.1.170:/home/webrun/
+  131  ls
+  132  vim config
+  133  ls
+  134  ssh webrun@192.168.1.170
+  135  scp id_rsa.pub webrun@192.168.1.170:/home/webrun/
+  136  ls
+  137  cd
+  138  ls
+  139  cd Documents
+  140  ls
+  141  git clone git-server:java/business/yinyuetai_web_mobile.git
+  142  git clone git-server:git clone git-server:java/business/yinyuetai_web_jsp_common_v2.git
+  143  ls
+  144  git clone git-server:java/business/yinyuetai_web_jsp_common_v2.git
+  145  git clone git-server:java/business/yinyuetai_web_common_static_resource.git
+  146  whereis java
+  147  cd /usr/bin/java
+  148  ls -l /usr/bin/java
+  149  vi /etc/profile
+  150  vim /etc/profile
+  151  sudo vim /etc/profile
+  152  java -version
+  153  path
+  154  vim /etc/profile
+  155  source /etc/profile
+  156  java -version
+  157  cd /Users/guocongli/Documents/work-tools/jdk1.7.0/bin/java
+  158  cd /Users/guocongli/Documents/work-tools/jdk1.7.0/bin
+  159  ls
+  160  java -v
+  161  java
+  162  java -v
+  163  java -version
+  164  cd /Applications/Launchpad.app
+  165  cd ..
+  166  l
+  167  cd ..
+  168  l
+  169  cd /
+  170  l
+  171  cd Library
+  172  L
+  173  l
+  174  cd Java
+  175  L
+  176  l
+  177  cd JavaVirtualMachines
+  178  l
+  179  ls
+  180  l
+  181  ls
+  182  cd ..
+  183  ls
+  184  cd work-space
+  185  l
+  186  cd yinyuetai_web_mobile
+  187  l
+  188  cd src
+  189  l
+  190  cd main
+  191  l
+  192  cd ja
+  193  cd java
+  194  jl
+  195  l
+  196  java --version
+  197  java --v
+  198  java --version
+  199  java --help
+  200  java -version
+  201  /Library
+  202  L
+  203  cd Java
+  204  l
+  205  cd JavaVirtualMachines
+  206  l
+  207  cd jdk1.8.0_111.jdk
+  208  l
+  209  cd Contents
+  210  l
+  211  cd ..
+  212  l
+  213  cd ..
+  214  ls
+  215  /
+  216  l
+  217  cd /etc/
+  218  l
+  219  vim hosts
+  220  java -version
+  221  l
+  222  ls
+  223  java -version
+  224  ls
+  225  Documents
+  226  ls
+  227  work_progect
+  228  ls
+  229  cd
+  230  ls
+  231  guocongli
+  232  Application
+  233  Applications
+  234  ls
+  235  cd
+  236  web_project
+  237  ls
+  238  work-space
+  239  ls
+  240  get-server:java/business/yinyuetai_web_topic.git
+  241  git-server:java/business/yinyuetai_web_topic.git
+  242  git clone git-server:java/business/yinyuetai_web_topic.git
+  243  git clone git-server:java/business/yinyuetai_web_news.git
+  244  ls
+  245  web_project
+  246  ls
+  247  work
+  248  work-space
+  249  ls
+  250  git clone git-server:java/business/yinyuetai_web_vip.git
+  251  ls
+  252  git clone git-server:java/business/yinyuetai_pay.git
+  253  sh Get.sh
+  254  cd pay
+  255  ls
+  256  sh Get.sh
+  257  vi      /etc/sysconfig/network
+  258  cd /etc
+  259  vim hosts
+  260  l
+  261  ls 
+  262  ls -al
+  263  vim hosts
+  264  sudo vim hosts
+  265  open .
+  266  cat hosts
+  267  cd
+  268  ls
+  269  web_project
+  270  ls
+  271  web_project
+  272  ls
+  273  work-space
+  274  ls
+  275  git clone -b mapiv1 git-server:java/platform/mapi.git
+  276  ls
+  277  git clone git-server:java/platform/mapi.git
+  278  git clone git-server:java/business/yinyuetai_web_zhongchou.git
+  279  ps
+  280  ps aux | grep java
+  281  ps aux 
+  282  ps au
+  283  ps ax
+  284  ps -ef | grep java
+  285  pkill java
+  286  ps -ef | grep java
+  287  pkill java
+  288  ps -ef | grep java
+  289  ps -ef | grep java | grep -v java
+  290  ps -ef | grep java | grep -v grep
+  291  pkill resin
+  292  ps -ef | grep java | grep -v grep
+  293  netstat -noa
+  294  netstat -na
+  295  netstat -na | grep 8001
+  296  netstat -na | grep 80
+  297  ls
+  298  web_project
+  299  ls
+  300  wor
+  301  work
+  302  work-space
+  303  ls
+  304  git clone git-server:java/business/yinyuetai_web_mini.git
+  305  ls
+  306  cd /etc
+  307  vim hosts
+  308  scutils -get HostName
+  309  scutils --get HostName
+  310  vi /etc/sysconfig/network
+  311  vi /etc/hosts
+  312  cd /etc
+  313  ls
+  314  vim hosts
+  315  cd /etc
+  316  vim hosts
+  317  scutils —get HostName
+  318  scutils  —set HostName localhost 
+  319  cd /etc/
+  320  less hosts
+  321  scutils -get hostname
+  322  vi /etc/syslog.conf
+  323  less hosts
+  324  vim hosts
+  325  vi hosts
+  326  less hosts
+  327  vim hosts
+  328  sudo scutil --set HostName guocongli 
+  329  vim hosts
+  330  l
+  331  vim hosts
+  332  /
+  333  cd /etc
+  334  vim hosts
+  335  vim hosts.equiv
+  336  vim hosts
+  337  ls
+  338  web_project
+  339  ls
+  340  work-space
+  341  ls
+  342  vchart
+  343  git clone git-server:java/business/yinyuetai_web_vchart_v2.git
+  344  ls
+  345  web_project
+  346  ls
+  347  work
+  348  work-space
+  349  ls
+  350  guocongli
+  351  ls
+  352  web_project
+  353  ls
+  354  work
+  355  ls
+  356  work-space
+  357  ls
+  358  video
+  359  ls
+  360  sh GET.sh
+  361  ls
+  362  Documents
+  363  ls
+  364  study
+  365  git.clone https://github.com/GuoYongfeng/babel-starter-kit.git
+  366  git clone https://github.com/GuoYongfeng/babel-starter-kit.git
+  367  npm install --global babel-cli
+  368  babel-cli -v
+  369  babel-cli v
+  370  babel-cli 
+  371  ls
+  372  documents
+  373  ls
+  374  study
+  375  ls
+  376  babel-starter-kit
+  377  ls
+  378  examples
+  379  ls
+  380  babel-with-cli
+  381  ls
+  382  npm install
+  383  npm install --save-dev babel-preset-react babel-preset-stage-0
+  384  babel -help
+  385  babel src -d lib
+  386  cd
+  387  ls
+  388  documents
+  389  ls
+  390  study
+  391  ls
+  392  babel-starter-kit
+  393  ls
+  394  examples
+  395  ls
+  396  babel-with-browser
+  397  /cd
+  398  ./cd
+  399  ls
+  400  npm install
+  401  cd／examples
+  402  cd examples
+  403  examples
+  404  cd-
+  405  cd。。
+  406  cd ..
+  407  ls
+  408  babel-with-browser
+  409  ls
+  410  cd -
+  411  ls
+  412  babel-with-browser
+  413  cd -
+  414  ls
+  415  babel-with-gulp/npm install
+  416  ls
+  417  babel-with-gulp
+  418  npm install
+  419  gulp
+  420  $gulp
+  421  gulp
+  422  ls
+  423  index.html
+  424  gulp
+  425  $gulp
+  426  $ gulp
+  427  gulp
+  428  npm install -g gulp
+  429  gulp
+  430  l
+  431  npm install
+  432  l
+  433  gulp
+  434  cd node_modules
+  435  cd gulp
+  436  l
+  437  cd bin
+  438  l
+  439  cd ..
+  440  l
+  441  1  2016 CHANGELOG.md\n-rw-r--r--    1 guocongli  staff   1.1K  2  1  2016 LICENSE\n-rw-r--r--    1 guocongli  staff   3.9K  2  9  2016 README.md\ndrwxr-xr-x    3 guocongli  staff   102B  2  1  2016 bin\ndrwxr-xr-x    7 guocongli  staff   238B  3  7 10:55 completion\n-rw-r--r--    1 guocongli  staff   2.0K  2  9  2016 gulp.1\n-rw-r--r--    1 guocongli  staff   1.5K  2  1  2016 index.js\ndrwxr-xr-x    4 guocongli  staff   136B  3  7 10:55 lib\ndrwxr-xr-x    5 guocongli  staff   170B  3  7 10:55 node_modules\n-rw-r--r--    1 guocongli  staff   3.7K  3  7 10:55 package.json
+  442  cd
+  443  l
+  444  ls
+  445  documents
+  446  ls
+  447  study
+  448  examples
+  449  ls
+  450  babel-starter-kit
+  451  examples
+  452  babel-with-gulp
+  453  gulp
+  454  ls
+  455  documents
+  456  ls
+  457  study
+  458  ls
+  459  bābel-starter-kit
+  460  babel-starter-kit
+  461  examples
+  462  babel-with-webpack
+  463  webpack -v
+  464  npm install -g  webpack
+  465  webpack -v
+  466  npm install
+  467  npm install --save-dev webpack-dev-server
+  468  npm run dev
+  469  npm install
+  470  node -v
+  471  npm -v
+  472  npm install -g node
+  473  npm run dev
+  474  webpack -v
+  475  npm run rev
+  476  l
+  477  vim package.json
+  478  npm run dev
+  479  npm install
+  480  vim package.json
+  481  rm -rf node_modules
+  482  l
+  483  npm install
+  484  l
+  485  npm dev
+  486  npm run dev
+  487  l
+  488  vim package.json
+  489  rm -rf node_modules
+  490  l
+  491  rm -rf npm-debug.log
+  492  l
+  493  npm install
+  494  l
+  495  npm install
+  496  l
+  497  npm install
+  498  vim package.json
+  499  npm install
+  500  npm run dev
+  501  vim package.json
+  502  webpack
+  503  vim package.json
+  504  npm install -g webpack
+  505  npm run dev
+  506  webpack
+  507  vim package.json
+  508  webpack-server
+  509  ./node_modules/.bin/webpack
+  510  ./node_modules/.bin/webpack-dev-server
+  511  npm install webpack-dev-server --save
+  512  npm run dev
+  513  ./node_modules/.bin/webpack-dev-server
+  514  ./node_modules/.bin/webpack
+  515  ./node_modules/.bin/webpack-dev-server
+  516  npm run dev
+  517  npm install babel-with-webpack 
+  518  sudo npm install babel-with-webpack
+  519  npm install webpack-dev-server -g
+  520  npm run dev
+  521  webpack-dev-derver
+  522  webpack-dev-server
+  523  vim package.json
+  524  webpack
+  525  webpack-dev-server
+  526  vim package.json
+  527  npm run devs
+  528  vim package.json
+  529  rm -rf node_modules
+  530  npm install
+  531  l
+  532  npm run devs
+  533  vim package.json
+  534  npm run devs
+  535  ls
+  536  documents
+  537  ls
+  538  study
+  539  babel-starter-kit
+  540  example
+  541  examples
+  542  babel-with-webpack
+  543  ls
+  544  vim package.json
+  545  ls
+  546  documents
+  547  ls
+  548  study
+  549  ls
+  550  babel-starter-kit
+  551  examples
+  552  ls
+  553  babel-with-webpack
+  554  ls
+  555  npm run dev
+  556  sudo rm -rf examples/babel-with-webpack/src/a.js
+  557  rm -rf examples/babel-with-webpack/src/a.js
+  558  ls
+  559  src
+  560  ls
+  561  cd ..
+  562  rm -rf examples/babel-with-webpack/src/a.js
+  563  ls
+  564  examples/
+  565  ls
+  566  babel-with-webpack
+  567  ls
+  568  src
+  569  mkdir a.js
+  570  rm -rf a.js
+  571  mkdiv b
+  572  mkfile a
+  573  吃的-
+  574  cd -
+  575  cd ..
+  576  cd -
+  577  cd ..
+  578  mkdir react-webpack
+  579  ls
+  580  react-webpack
+  581  git init
+  582  touch .gitigore README.md .babelrc
+  583  ls
+  584  touch .gitigore README.md .babelrc
+  585  git init
+  586  ls
+  587  touch .gitignore README.md .babelrc
+  588  git init
+  589  ls
+  590  touch  .gitignore README.md  .babelrc
+  591  ls
+  592  npm init
+  593  ls
+  594  ls -al
+  595  touch webpack.config.js
+  596  mkdir app public
+  597  ll
+  598  rm -rf gitigore
+  599  rm -rf react-webpack/gitigore
+  600  cd ..
+  601  rm -rf react-webpack/gitigore
+  602  rm -rf react-webpack/.gitigore
+  603  react-webpack
+  604  app
+  605  touch index.js
+  606  cd ..
+  607  ls
+  608  public
+  609  ls
+  610  touch index.html
+  611  webpack-dev-server -v
+  612  npm run dev
+  613  cd ..
+  614  npm install
+  615  npm run dev
+  616  npm install webpack webpack-dev-server --save-dev
+  617  npm run dev
+  618  ls
+  619  webpack.config.js
+  620  vim webpack.config.js
+  621  cd sduty
+  622  cd ..
+  623  react-webpack
+  624  npm run dev
+  625  rm -rf app public
+  626  mkdir src build
+  627  src
+  628  touch index.js component.js
+  629  cd ../build
+  630  touch index.html
+  631  webpack
+  632  cd ../
+  633  webpack
+  634  build touch bundle.js
+  635  npm run dev
+  636  src
+  637  touch entry1.js entry2.js
+  638  cd ..
+  639  npm install --save react react-dom
+  640  npm install babel-loader babel-core --save-dev
+  641  npm install --save-dev babel-preset-es2015 babel-preset-react babel-preset-stage-0
+  642  npm run dev
+  643  吃的。。
+  644  cd ..
+  645  rm -rf react-webpack
+  646  mkdir react-wepack
+  647  react-wepack
+  648  git init
+  649  touch .gitignore README.md .babelrc
+  650  ls
+  651  npm init
+  652  ls
+  653  \t touch webpack.config.js
+  654  \tmkdir app public
+  655  app
+  656  touch index.js
+  657  ls
+  658  ../
+  659  ls
+  660  public
+  661  touch index.js
+  662  touch index.html
+  663  ../
+  664  npm install webpack webpack-dev-server --save-dev
+  665  npm run dev
+  666  npm install
+  667  npm run dev
+  668  webpack
+  669  npm run dev
+  670  npm install html-webpack-plugin@2 --save-dev
+  671  npm run dev
+  672  node -v
+  673  etc
+  674  ls
+  675  app
+  676  ls
+  677  Applications/ls
+  678  cd ..
+  679  ls
+  680  guocongli
+  681  ls
+  682  documents
+  683  ls
+  684  cd ..
+  685  ls
+  686  hosts
+  687  sudo vi/etc/hosts
+  688  git -v
+  689  git v
+  690  help
+  691  git --version
+  692  ls
+  693  git config --list
+  694  cls
+  695  ls
+  696  documents
+  697  ls
+  698  learn
+  699  ls
+  700  node
+  701  ls
+  702  documents
+  703  ls
+  704  learn
+  705  ls
+  706  learnnode
+  707  makdir gittest cd gittest
+  708  makdir gittest
+  709  cd--
+  710  cd ..
+  711  ls -al
+  712  ls
+  713  learn
+  714  ls
+  715  learnode
+  716  learnnode
+  717  ls
+  718  mkdir gittest && cd gittest
+  719  git init
+  720  touch index.txt
+  721  ls
+  722  cat index.txt
+  723  vi index.txt
+  724  cat index.txt
+  725  git status
+  726  git add .
+  727  git status
+  728  git commit -m 'change index.txt'
+  729  git commit
+  730  git log
+  731  lear
+  732  clear
+  733  vi index.txt
+  734  git diff
+  735  cat index.txt
+  736  git diff
+  737  git add index.txt
+  738  git diff
+  739  git diff --cached
+  740  git diff master
+  741  git commit -m'hello world'
+  742  git log
+  743  git diff
+  744  git diff --cached
+  745  git diff master
+  746  vi index.txt
+  747  cat index.txt
+  748  git status
+  749  git add .
+  750  git status
+  751  git reset HEAD .
+  752  git status
+  753  cat index.txt
+  754  git diff
+  755  git reset HEAD index.txt
+  756  git diff
+  757  cat index.txt
+  758  git diff
+  759  git log
+  760  git status
+  761  history >1.txt
+  762  git log
+  763  git reflog
+  764  git add .
+  765  git status
+  766  git diff
+  767  git diff --cacthed
+  768  git diff --cached
+  769  git commit -m'1.txt'
+  770  git diff --cached
+  771  git diff master
+  772  git log
+  773  git reset HEAD .
+  774  git status
+  775  ls
+  776  git log
+  777  git checkout index.txt
+  778  git status
+  779  vi index.txt
+  780  git diff
+  781  git log
+  782  git rest --harda5794ed
+  783  git reset --harda5794ed
+  784  git status
+  785  git reset --hard a5794ed
+  786  git status
+  787  git branch
+  788  git branch dev
+  789  git branch
+  790  git checkout dev
+  791  git branch
+  792  git checkout master
+  793  git branch -D dev
+  794  git branch
+  795  git checkout -b dev
+  796  git log
+  797  touch hello.js
+  798  git status
+  799  git cheackout master
+  800  git checkout master
+  801  git status
+  802  git checkout dev
+  803  git add.
+  804  git add .
+  805  git stauts
+  806  git status
+  807  git checkout master
+  808  git status
+  809  git checkout dev
+  810  git commit -m'add hello.js'
+  811  git log
+  812  git checkout master
+  813  git log
+  814  git merge dev
+  815  git log
+  816  git checkout dev
+  817  git log
+  818  git
+  819  git log
+  820  vi hello.js
+  821  git add .
+  822  gti commit -m 'write dev'
+  823  git commit -m 'write dev'
+  824  git checkout master
+  825  vi hello.js
+  826  git add .
+  827  git commit -m 'write master'
+  828  git merge dev
+  829  vi hello.js
+  830  git commit -m 'merge'
+  831  git add .
+  832  git commit -m 'merge'
+  833  git log
+  834  echo '# learnode' > README.md
+  835  ls
+  836  vi README.md
+  837  git status
+  838  echo '.idea' >gitignore
+  839  git status
+  840  git add .
+  841  git commit -m 'commit'
+  842  git remote add origin https://github.com/Cindy-xiaoya/learnode.git
+  843  push -u cindy master
+  844  git push -u cindy master
+  845  git push -u origin master
+  846  git log
+  847  git reset -hard^
+  848  git log
+  849  status
+  850  git status
+  851  git log
+  852  ls
+  853  echo '.idea' > .gitignore
+  854  git status
+  855  git add .
+  856  git status
+  857  git commit -m'gitignore'
+  858  git push
+  859  git remote add cindy https://github.com/Cindy-xiaoya/learnode.git
+  860  git push -u cindy master
+  861  git checkout dev
+  862  touch hello.js
+  863  git status
+  864  vi hello.js
+  865  git remote cindy1 https://github.com/Cindy-xiaoya/learnode.git
+  866  git remote add cindy1 https://github.com/Cindy-xiaoya/learnode.git
+  867  git push -u cindy1 dev
+  868  git checkout -b gh-pages
+  869  echo 'nodelearn' >index.html
+  870  git ststus
+  871  git status
+  872  git add index.html
+  873  git commit -m'creat index.html'
+  874  git push cindy gh-pages
+  875  git remote -v
+  876  git remote rm origin
+  877  git remote -v
+  878  git remote remove cindy1
+  879  git remote -v
+  880  ls
+  881  touch .gitignore
+  882  ls
+  883  git status
+  884  vi .gitignore
+  885  echo .idea
+  886  git status
+  887  vi .gitignore
+  888  git status
+  889  echo '.idea' >.gitignore
+  890  git status
+  891  vi .gitignore
+  892  echo 'node_modules' >>.gitignore
+  893  vi .gitignore
+  894  echo '.DS_Store' >>.gitignore
+  895  vm .gitignore
+  896  vi .gitignore
+  897  git history learngit.txt
+  898  git --help
+  899  history learngit.txt
+  900  clear
+  901  git clone https://github.com/Cindy-xiaoya/201615node.git
+  902  git clone https://github.com/Cindy-xiaoya/201615node.git leader
+  903  ls
+  904  leader
+  905  ls
+  906  第7组
+  907  echo '王超超  连海威 cindy 沈德明  谢周振 季小敏 蔺佳星 赵建华' >cindy.txt
+  908  cd leader
+  909  cd ..
+  910  git add .
+  911  git commit -m'第7组'
+  912  git push cindy master
+  913  git remote -v
+  914  git push origin master
+  915  ls
+  916  第7组cindy
+  917  cd
+  918  cd ..
+  919  ls
+  920  guocongli
+  921  ls
+  922  documents
+  923  ls
+  924  learn
+  925  ls
+  926  learnode
+  927  learnnode
+  928  ls
+  929  gittest
+  930  ls
+  931  git checkout master
+  932  git branch -a
+  933  git statu
+  934  git status
+  935  git add .
+  936  git status
+  937  git checkout master
+  938  git status
+  939  git checkout dev
+  940  git checkout master
+  941  git status
+  942  git checkout gh-pages 
+  943  ls
+  944  cd ../
+  945  ls
+  946  cd git
+  947  cd gittest/
+  948  ls
+  949  mv leader ../
+  950  cd ../
+  951  cd leader
+  952  history > gitlearn.txt
+  953  git pull
+  954  git status
+  955  git push
+  956  git phll master
+  957  git pull master
+  958  git pull origin master
+  959  git remote add teacher https://github.com/zhufengzhufeng/201615node.git
+  960  git pull teacher master
+  961  git status
+  962  git push origin master
+  963  cd ..
