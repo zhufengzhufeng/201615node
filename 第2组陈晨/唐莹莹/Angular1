@@ -1,0 +1,125 @@
+###Angular
+#### yarn
+是一种新的 Hadoop 资源管理器，它是一个通用资源管理系统，可为上层应用提供统一的资源管理和调度，它的引入为集群在利用率、资源统一管理和数据共享等方面带来了巨大好处。
+
+下载yarn
+```
+npm install yarn -g
+```
+
+#### 初始化一个package.json
+```
+yarn init
+```
+#### 安装包
+```
+yarn add angular
+yarn add gulp --dev
+yarn remvoe gulp --dev
+```
+#####bootstrap栅格化布局 一共 12 列 固定写法
+```
+<div class="container">//容器
+    <div class="row"> //行
+        <div class="col-md-12">//col-xs 是作用在手机上的，.col-md 是作用在桌面显示器上的
+            ....
+            ....
+            ...
+            
+        </div>
+    </div>
+</div>
+```
+
+ng-bind-html 指令是通一个安全的方式将内容绑定到 HTML 元素上 解析标签
+
+####directive （指令）
+指令分为四种格式
+Element E
+```
+<my-drag></my-drag>
+```
+Attributes A
+```
+<div my-drag></div>
+```
+Class C
+Comment M 前后必须用空格，不建议使用
+
+directive:myDrag
+
+指令分为两类 自带指令  自定义指令
+
+   自定义指令
+    装饰型指令 赋予标签一些功能  link函数
+    组件式 把标签 替换成一个组件 template
+```
+ app.directive('myDrag',function () {
+        return {
+            replace:true, //将原指令标签替换掉，要求模板只能有一个根节点
+            restrict:'EAM', //[词义：限制约束]限制使用范围 默认范围是EA,范围的标识必须大写E-element元素 a-attribute属性 M-comment注释
+            template:`<div>
+                        <div>Hello</div>
+                        <div>zfpx</div>
+                      </div>` //模板的根节点只能有一个
+        }
+    });
+```
+
+连接函数
+```
+    app.directive('myBorder',function () {
+        return {
+            replace:true,
+            restrict:'EA',
+            //链接函数 链接视图和作用域的
+            link:function ($scope,element,attrs) {
+                //$scope作用域 就是储存数据的地方 元素   属性 $符号 有不有都行 就是形参
+                //形参 ,在link函数中可以操作DOM元素
+                // 1.代表的是当前指令所在的作用域
+                // 2.element代表当前指令所在的标签，是一个jquery对象
+                element.css('outline','5px dashed yellowgreen');   //outline 轮廓 是绘制于元素周围的一条线,位于边框边缘的外围
+                //angular.element == $
+                angular.element(document).on('click',function () {
+                    alert('click')
+                });
+                // 3.代表当前指令上所有的属性集合
+                console.log(attrs);
+            }
+        }
+    });
+```
+  scope:{}, //给当前指令产生一个作用域 {}  默认值是false
+            // {} 不能获取父作用域的属性 相当于开辟了一个和$rootScope平级的作用域
+            transclude:true,//会产生一个作用域,会将指令中夹着的部分 插入到带有ng-transclude的标签内
+
+####= & @
+
+```
+<panel st="success" article="t" s="say(abc,b)">
+                这是文章内容 angularjs
+            </panel>
+//下面对t进行了赋值所以是变量
+   scope:{  //接收的都是属性
+                name:'@st', //@符引用的是字符串
+                title:'=article', //= 取的是变量
+                say:'&s' //取的是方法，可以直接用&符号取到
+            }
+```
+```
+  app.directive('train',function () {
+        return {
+            restrict:'A',
+            //^自己身上找找不到向上找
+            require:'^?girl',//^ 是自己没有向上级查找 在当前指令上找girl，找到则会在link函数的第四个参数增加girl控制器的实例
+            link:function (scope,element,attrs,gCtrl) { //如果没有依赖到使用的是? 则得到的值是null，否则报错
+                console.log(gCtrl);
+                gCtrl.collect('火车');
+            }
+        }
+    });
+```
+
+###watch
+ 脏值检测 对比两次的变化，触发对应的回调函数,将所有数据放在一个数组中，有一个变化 所有$watchers执行一遍
+ vue 自带的defineProperty set get + 观察者
